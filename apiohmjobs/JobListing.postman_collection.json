@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "83ca9739-2607-49db-9678-072388d9a6a9",
+		"name": "JobListing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17277578",
+		"_collection_link": "https://crimson-shadow-298361.postman.co/workspace/Team-Workspace~d8cd3a28-d0de-4b5d-882a-36b9b75e9cbc/collection/17277578-83ca9739-2607-49db-9678-072388d9a6a9?action=share&source=collection_link&creator=17277578"
+	},
+	"item": [
+		{
+			"name": "Listing-search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "pageNo",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "pageSize",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "department",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "designation_search",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "skillSetSearch",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "postFeshness",
+							"value": "30",
+							"type": "text"
+						},
+						{
+							"key": "graduationID",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "tagID",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ohmjobs.com/job-listing/search",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ohmjobs",
+						"com"
+					],
+					"path": [
+						"job-listing",
+						"search"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

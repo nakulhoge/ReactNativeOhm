@@ -1,0 +1,326 @@
+{
+  "info": {
+    "_postman_id": "fb1cd0a1-5a9a-489b-b063-650b34201d54",
+    "name": "Registration",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "http://www.ohmjobs.in/job-seeker/genrateOTP",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "FirstName",
+              "value": "Yuvraj",
+              "type": "text"
+            },
+            {
+              "key": "LastName",
+              "value": "Randive",
+              "type": "text"
+            },
+            {
+              "key": "emailID",
+              "value": "sachingore95@gmail.com",
+              "type": "text"
+            },
+            {
+              "key": "mobileNumber",
+              "value": "9960206468",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "yuvraj123",
+              "type": "text"
+            },
+            {
+              "key": "userType",
+              "value": "JobSeekar",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://www.ohmjobs.in/job-seeker/genrateOTP",
+          "protocol": "http",
+          "host": ["www", "ohmjobs", "in"],
+          "path": ["job-seeker", "genrateOTP"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://www.ohmjobs.in/job-seeker/registration",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "FirstName",
+              "value": "Yuvraj",
+              "type": "text"
+            },
+            {
+              "key": "LastName",
+              "value": "Randive",
+              "type": "text"
+            },
+            {
+              "key": "emailID",
+              "value": "sachingore95@gmail.com",
+              "type": "text"
+            },
+            {
+              "key": "mobileNumber",
+              "value": "9960206468",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "yuvraj123",
+              "type": "text"
+            },
+            {
+              "key": "userType",
+              "value": "JobSeekar",
+              "type": "text"
+            },
+            {
+              "key": "OTP",
+              "value": "939920",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://www.ohmjobs.in/job-seeker/registration",
+          "protocol": "http",
+          "host": ["www", "ohmjobs", "in"],
+          "path": ["job-seeker", "registration"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Personal-info",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "FirstName",
+              "value": "test",
+              "type": "text"
+            },
+            {
+              "key": "LastName",
+              "value": "test",
+              "type": "text"
+            },
+            {
+              "key": "mobileNumber",
+              "value": "888888888",
+              "type": "text"
+            },
+            {
+              "key": "Gender",
+              "value": "Male",
+              "type": "text"
+            },
+            {
+              "key": "DateOfBirth",
+              "value": "2002-01-01",
+              "type": "text"
+            },
+            {
+              "key": "marital_status",
+              "value": "Married",
+              "type": "text"
+            },
+            {
+              "key": "currentLocation",
+              "value": "Bharuch",
+              "type": "text"
+            },
+            {
+              "key": "preferedLocation",
+              "value": "Ambala",
+              "type": "text"
+            },
+            {
+              "key": "workPermitForUSA",
+              "value": "Yes",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:3981/JobSeekars/UpdateJobSeePersonalInformation",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3981",
+          "path": ["JobSeekars", "UpdateJobSeePersonalInformation"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Qualification",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiIxMjI5NzYiLCJsb2dpbl9uYW1lIjoiSGZmaGZoZGQiLCJsb2dpbl9lbWFpbCI6Inl1dnJhanJhbmRpdmU4N0BnbWFpbC5jb20iLCJ1c2VyVHlwZSI6IkpvYlNlZWthciIsIkpvYkNhdGVnb3J5SUQiOiIiLCJkZXBhcnRtZW50SUQiOiIiLCJob3NwaXRhbFVzZXJUeXBlIjoiIiwibmJmIjoxNjUwOTY1NTg3LCJleHAiOjE2NTEwNTE5ODcsImlhdCI6MTY1MDk2NTU4N30.vuJTFn7CA8_kpSDTYF_A3s1vGkaj8oM8f7JKiTCYI9I",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "qualificationdata",
+              "value": "{\"LicenceNumber\":[\"54456465\"],\"protocol\":[\"Yes\"],\"Mst_Job_CategoryID\":[\"2\"],\"Mst_Job_GraduationID\":[\"110\"],\"Mst_Job_PostGraduationID\":[\"335\"],\"Mst_DepartmentID\":[\"1\"],\"Mst_FunctionalityAriaID\":[\"4\"],\"collage\":[\"I Collage\"],\"university\":[\"Pune\"],\"year\":[\"2020\"],\"Mst_fellowshipsID\":[\"Fellowship Course in Intensive Care Physiotherapy\\r\\n\"],\"Mst_certificationsID\":[\"Certificate Course in Assistant Nursing in Ayurveda\\r\\n\"]}",
+              "type": "text"
+            }
+          ],
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://www.ohmjobs.com/JobSeekars/AddUpdateQualification?deleteval=1",
+          "protocol": "https",
+          "host": ["www", "ohmjobs", "com"],
+          "path": ["JobSeekars", "AddUpdateQualification"],
+          "query": [
+            {
+              "key": "deleteval",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Experence",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiIxMjI5NzYiLCJsb2dpbl9uYW1lIjoiSGZmaGZoZGQiLCJsb2dpbl9lbWFpbCI6Inl1dnJhanJhbmRpdmU4N0BnbWFpbC5jb20iLCJ1c2VyVHlwZSI6IkpvYlNlZWthciIsIkpvYkNhdGVnb3J5SUQiOiIiLCJkZXBhcnRtZW50SUQiOiIiLCJob3NwaXRhbFVzZXJUeXBlIjoiIiwibmJmIjoxNjUwOTY1NTg3LCJleHAiOjE2NTEwNTE5ODcsImlhdCI6MTY1MDk2NTU4N30.vuJTFn7CA8_kpSDTYF_A3s1vGkaj8oM8f7JKiTCYI9I",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "deleteval",
+              "value": " 1",
+              "type": "text"
+            },
+            {
+              "key": "jobtype",
+              "value": " Full Time",
+              "type": "text"
+            },
+            {
+              "key": "designation",
+              "value": " Developer",
+              "type": "text"
+            },
+            {
+              "key": "Mst_JobRoleID",
+              "value": " 5",
+              "type": "text"
+            },
+            {
+              "key": "totalExperenceYear",
+              "value": " 3",
+              "type": "text"
+            },
+            {
+              "key": "experience_month",
+              "value": " 9",
+              "type": "text"
+            },
+            {
+              "key": "currenctCTC",
+              "value": " 40000",
+              "type": "text"
+            },
+            {
+              "key": "expectedCTC",
+              "value": " 80000",
+              "type": "text"
+            },
+            {
+              "key": "isPresentEmployer",
+              "value": " 2",
+              "type": "text"
+            },
+            {
+              "key": "EmployerType",
+              "value": " Institute",
+              "type": "text"
+            },
+            {
+              "key": "organisationName",
+              "value": " DDD",
+              "type": "text"
+            },
+            {
+              "key": "Mst_FunctionalityAriaID",
+              "value": " 5",
+              "type": "text"
+            },
+            {
+              "key": "keySkill",
+              "value": " skill_1",
+              "type": "text"
+            },
+            {
+              "key": "jobSummary",
+              "value": " <p>test&nbsp;Profile summary</p>",
+              "type": "text"
+            },
+            {
+              "key": "resumeURl",
+              "value": " 2022/60b00cfb-89bb-4fc8-a2c7-bb02a567e2d1.png",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://www.ohmjobs.com/JobSeekars/AddUpdateExperence",
+          "protocol": "https",
+          "host": ["www", "ohmjobs", "com"],
+          "path": ["JobSeekars", "AddUpdateExperence"]
+        }
+      },
+      "response": []
+    }
+  ]
+}

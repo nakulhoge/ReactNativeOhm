@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "963e426d-d401-4a41-87a1-a37a44e069b4",
+		"name": "Other",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17277578"
+	},
+	"item": [
+		{
+			"name": "graduation-list",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "categoryID",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3981/common/get-graduation-list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3981",
+					"path": [
+						"common",
+						"get-graduation-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post-graduation-list",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "categoryID",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "graduationId",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3981/common/get-post-graduation-list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3981",
+					"path": [
+						"common",
+						"get-post-graduation-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-certification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3981/common/get-certification",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3981",
+					"path": [
+						"common",
+						"get-certification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-fellowship",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3981/common/get-fellowship",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3981",
+					"path": [
+						"common",
+						"get-fellowship"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-JobRole",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://www.ohmjobs.com/common/get-JobRole",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ohmjobs",
+						"com"
+					],
+					"path": [
+						"common",
+						"get-JobRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-FunctionalityAria",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3981/common/get-FunctionalityAria",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3981",
+					"path": [
+						"common",
+						"get-FunctionalityAria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Resume Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiIxMjI5NzYiLCJsb2dpbl9uYW1lIjoidGVzdHNzIiwibG9naW5fZW1haWwiOiJ5dXZyYWpyYW5kaXZlODdAZ21haWwuY29tIiwidXNlclR5cGUiOiJKb2JTZWVrYXIiLCJKb2JDYXRlZ29yeUlEIjoiMiIsImRlcGFydG1lbnRJRCI6IjEiLCJob3NwaXRhbFVzZXJUeXBlIjoiIiwibmJmIjoxNjU4MDY4NDc1LCJleHAiOjE2NTgxNTQ4NzUsImlhdCI6MTY1ODA2ODQ3NX0.VkGtFM7MBOWmrCGt-GrKyLZ3G00cQfewfLTzbebqk54",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://www.ohmjobs.com/job-seeker/delete-resume",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ohmjobs",
+						"com"
+					],
+					"path": [
+						"job-seeker",
+						"delete-resume"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Account",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiIxMjI5NzYiLCJsb2dpbl9uYW1lIjoidGVzdHNzIiwibG9naW5fZW1haWwiOiJ5dXZyYWpyYW5kaXZlODdAZ21haWwuY29tIiwidXNlclR5cGUiOiJKb2JTZWVrYXIiLCJKb2JDYXRlZ29yeUlEIjoiMiIsImRlcGFydG1lbnRJRCI6IjEiLCJob3NwaXRhbFVzZXJUeXBlIjoiIiwibmJmIjoxNjU4MDY4NDc1LCJleHAiOjE2NTgxNTQ4NzUsImlhdCI6MTY1ODA2ODQ3NX0.VkGtFM7MBOWmrCGt-GrKyLZ3G00cQfewfLTzbebqk54",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://www.ohmjobs.com/job-seeker/remove-account",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ohmjobs",
+						"com"
+					],
+					"path": [
+						"job-seeker",
+						"remove-account"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

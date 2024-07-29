@@ -1,0 +1,509 @@
+{
+	"info": {
+		"_postman_id": "fb1cd0a1-5a9a-489b-b063-650b34201d54",
+		"name": "Registration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17277578",
+		"_collection_link": "https://crimson-shadow-298361.postman.co/workspace/Team-Workspace~d8cd3a28-d0de-4b5d-882a-36b9b75e9cbc/collection/17277578-fb1cd0a1-5a9a-489b-b063-650b34201d54?action=share&source=collection_link&creator=17277578"
+	},
+	"item": [
+		{
+			"name": "other",
+			"item": []
+		},
+		{
+			"name": "http://www.ohmjobs.in/job-seeker/genrateOTP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "FirstName",
+							"value": "Yuvraj",
+							"type": "text"
+						},
+						{
+							"key": "LastName",
+							"value": "Randive",
+							"type": "text"
+						},
+						{
+							"key": "emailID",
+							"value": "sachingore95@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "mobileNumber",
+							"value": "9960206468",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "yuvraj123",
+							"type": "text"
+						},
+						{
+							"key": "userType",
+							"value": "JobSeekar",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ohmjobs.in/job-seeker/genrateOTP",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ohmjobs",
+						"in"
+					],
+					"path": [
+						"job-seeker",
+						"genrateOTP"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://www.ohmjobs.in/job-seeker/registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "FirstName",
+							"value": "Yuvraj",
+							"type": "text"
+						},
+						{
+							"key": "LastName",
+							"value": "Randive",
+							"type": "text"
+						},
+						{
+							"key": "emailID",
+							"value": "sachingore95@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "mobileNumber",
+							"value": "9960206468",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "yuvraj123",
+							"type": "text"
+						},
+						{
+							"key": "userType",
+							"value": "JobSeekar",
+							"type": "text"
+						},
+						{
+							"key": "OTP",
+							"value": "939920",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ohmjobs.in/job-seeker/registration",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ohmjobs",
+						"in"
+					],
+					"path": [
+						"job-seeker",
+						"registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Personal-info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiIxMjI5NzYiLCJsb2dpbl9uYW1lIjoidGVzdCIsImxvZ2luX2VtYWlsIjoieXV2cmFqcmFuZGl2ZTg3QGdtYWlsLmNvbSIsInVzZXJUeXBlIjoiSm9iU2Vla2FyIiwiSm9iQ2F0ZWdvcnlJRCI6IjIiLCJkZXBhcnRtZW50SUQiOiIxIiwiaG9zcGl0YWxVc2VyVHlwZSI6IiIsIm5iZiI6MTY1MjE5NzI0NiwiZXhwIjoxNjUyMjgzNjQ2LCJpYXQiOjE2NTIxOTcyNDZ9._Nn8FdsWD1mflEDCCf9j5f16bV3deQrZVDT6x5z7Gk0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "FirstName",
+							"value": "testss",
+							"type": "text"
+						},
+						{
+							"key": "LastName",
+							"value": "testsss",
+							"type": "text"
+						},
+						{
+							"key": "mobileNumber",
+							"value": "888888888",
+							"type": "text"
+						},
+						{
+							"key": "Gender",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "DateOfBirth",
+							"value": "2002-01-01",
+							"type": "text"
+						},
+						{
+							"key": "marital_status",
+							"value": "Married",
+							"type": "text"
+						},
+						{
+							"key": "currentLocation",
+							"value": "Bharuch",
+							"type": "text"
+						},
+						{
+							"key": "preferedLocation",
+							"value": "Ambala",
+							"type": "text"
+						},
+						{
+							"key": "workPermitForUSA",
+							"value": "Yes",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ohmjobs.com/JobSeekars/UpdateJobSeePersonalInformation",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ohmjobs",
+						"com"
+					],
+					"path": [
+						"JobSeekars",
+						"UpdateJobSeePersonalInformation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Qualification",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI3MTI4MiIsImxvZ2luX25hbWUiOiIgdGVzdCIsImxvZ2luX2VtYWlsIjoic2FjaGluZ29yZTk1QGdtYWlsLmNvbSIsInVzZXJUeXBlIjoiSm9iU2Vla2FyIiwiSm9iQ2F0ZWdvcnlJRCI6IjIiLCJkZXBhcnRtZW50SUQiOiIxIiwiaG9zcGl0YWxVc2VyVHlwZSI6IiIsIm5iZiI6MTY1MTM4ODg2OSwiZXhwIjoxNjUxNDc1MjY5LCJpYXQiOjE2NTEzODg4Njl9.nfpNuD0muW2ODB4hXXGvf1ETmdpldrn9cTGOkxQMEno",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "qualificationdata",
+							"value": "{\"LicenceNumber\":[\"54456465\"],\"protocol\":[\"Yes\"],\"Mst_Job_CategoryID\":[\"2\"],\"Mst_Job_GraduationID\":[\"110\"],\"Mst_Job_PostGraduationID\":[\"335\"],\"Mst_DepartmentID\":[\"1\"],\"Mst_FunctionalityAriaID\":[\"4\"],\"collage\":[\"I Collage\"],\"university\":[\"Pune\"],\"year\":[\"2020\"],\"Mst_fellowshipsID\":[\"Fellowship Course in Intensive Care Physiotherapy\\r\\n\"],\"Mst_certificationsID\":[\"Certificate Course in Assistant Nursing in Ayurveda\\r\\n\"]}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ohmjobs.com/JobSeekars/AddUpdateQualification?deleteval=1",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ohmjobs",
+						"com"
+					],
+					"path": [
+						"JobSeekars",
+						"AddUpdateQualification"
+					],
+					"query": [
+						{
+							"key": "deleteval",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Experence",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiIxMjI5NzYiLCJsb2dpbl9uYW1lIjoidGVzdCIsImxvZ2luX2VtYWlsIjoieXV2cmFqcmFuZGl2ZTg3QGdtYWlsLmNvbSIsInVzZXJUeXBlIjoiSm9iU2Vla2FyIiwiSm9iQ2F0ZWdvcnlJRCI6IjIiLCJkZXBhcnRtZW50SUQiOiIxIiwiaG9zcGl0YWxVc2VyVHlwZSI6IiIsIm5iZiI6MTY1MjE5NzI0NiwiZXhwIjoxNjUyMjgzNjQ2LCJpYXQiOjE2NTIxOTcyNDZ9._Nn8FdsWD1mflEDCCf9j5f16bV3deQrZVDT6x5z7Gk0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "deleteval",
+							"value": " 1",
+							"type": "text"
+						},
+						{
+							"key": "jobtype",
+							"value": " Full Time",
+							"type": "text"
+						},
+						{
+							"key": "designation",
+							"value": " Developer",
+							"type": "text"
+						},
+						{
+							"key": "Mst_JobRoleID",
+							"value": " 5",
+							"type": "text"
+						},
+						{
+							"key": "totalExperenceYear",
+							"value": " 3",
+							"type": "text"
+						},
+						{
+							"key": "experience_month",
+							"value": " 9",
+							"type": "text"
+						},
+						{
+							"key": "currenctCTC",
+							"value": " 40000",
+							"type": "text"
+						},
+						{
+							"key": "expectedCTC",
+							"value": " 80000",
+							"type": "text"
+						},
+						{
+							"key": "isPresentEmployer",
+							"value": " 2",
+							"type": "text"
+						},
+						{
+							"key": "EmployerType",
+							"value": " Institute",
+							"type": "text"
+						},
+						{
+							"key": "organisationName",
+							"value": " DDD",
+							"type": "text"
+						},
+						{
+							"key": "Mst_FunctionalityAriaID",
+							"value": " 5",
+							"type": "text"
+						},
+						{
+							"key": "keySkill",
+							"value": " skill_1",
+							"type": "text"
+						},
+						{
+							"key": "jobSummary",
+							"value": " <p>test&nbsp;Profile summary</p>",
+							"type": "text"
+						},
+						{
+							"key": "resumeURl",
+							"value": " 2022/60b00cfb-89bb-4fc8-a2c7-bb02a567e2d1.png",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ohmjobs.com/JobSeekars/AddUpdateExperence",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ohmjobs",
+						"com"
+					],
+					"path": [
+						"JobSeekars",
+						"AddUpdateExperence"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Resume_Upload",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI3MTI4MiIsImxvZ2luX25hbWUiOiIgdGVzdCIsImxvZ2luX2VtYWlsIjoic2FjaGluZ29yZTk1QGdtYWlsLmNvbSIsInVzZXJUeXBlIjoiSm9iU2Vla2FyIiwiSm9iQ2F0ZWdvcnlJRCI6IjIiLCJkZXBhcnRtZW50SUQiOiIxIiwiaG9zcGl0YWxVc2VyVHlwZSI6IiIsIm5iZiI6MTY1MTM4ODg2OSwiZXhwIjoxNjUxNDc1MjY5LCJpYXQiOjE2NTEzODg4Njl9.nfpNuD0muW2ODB4hXXGvf1ETmdpldrn9cTGOkxQMEno",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": "/C:/Users/Yuvraj Randive/Desktop/Template-Invoice.PNG"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ohmjobs.com/JobSeekars/UploadFilesAjax",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ohmjobs",
+						"com"
+					],
+					"path": [
+						"JobSeekars",
+						"UploadFilesAjax"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetQualification",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiIxMjI5NzYiLCJsb2dpbl9uYW1lIjoidGVzdHNzIiwibG9naW5fZW1haWwiOiJ5dXZyYWpyYW5kaXZlODdAZ21haWwuY29tIiwidXNlclR5cGUiOiJKb2JTZWVrYXIiLCJKb2JDYXRlZ29yeUlEIjoiMiIsImRlcGFydG1lbnRJRCI6IjEiLCJob3NwaXRhbFVzZXJUeXBlIjoiIiwibmJmIjoxNjUzMDU5NjI2LCJleHAiOjE2NTMxNDYwMjYsImlhdCI6MTY1MzA1OTYyNn0.dHnP-8NA-IFMszKv9eVGRlF3LAALk--3tCROISSgWFw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://www.ohmjobs.com/job-seeker/getQaulification",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ohmjobs",
+						"com"
+					],
+					"path": [
+						"job-seeker",
+						"getQaulification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPersonalInformation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiIxNDM1NDgiLCJsb2dpbl9uYW1lIjoiWXV2cmFqIiwibG9naW5fZW1haWwiOiJ5dXZyYWpyYW5kaXZlODdAZ21haWwuY29tIiwidXNlclR5cGUiOiJKb2JTZWVrYXIiLCJKb2JDYXRlZ29yeUlEIjoiMSIsImRlcGFydG1lbnRJRCI6IjM1IiwiaG9zcGl0YWxVc2VyVHlwZSI6IiIsIm5iZiI6MTcwNjA3ODE1MywiZXhwIjoxNzA2MTY0NTUzLCJpYXQiOjE3MDYwNzgxNTN9.vwmoXJbuX_4u7F7CQJtsO5JsDsXRw2afskz39_AOHvQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://www.ohmjobs.com/job-seeker/getPersonalInformation",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ohmjobs",
+						"com"
+					],
+					"path": [
+						"job-seeker",
+						"getPersonalInformation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetExperience",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiIxMjI5NzYiLCJsb2dpbl9uYW1lIjoidGVzdHNzIiwibG9naW5fZW1haWwiOiJ5dXZyYWpyYW5kaXZlODdAZ21haWwuY29tIiwidXNlclR5cGUiOiJKb2JTZWVrYXIiLCJKb2JDYXRlZ29yeUlEIjoiMiIsImRlcGFydG1lbnRJRCI6IjEiLCJob3NwaXRhbFVzZXJUeXBlIjoiIiwibmJmIjoxNjUzMDU5NjI2LCJleHAiOjE2NTMxNDYwMjYsImlhdCI6MTY1MzA1OTYyNn0.dHnP-8NA-IFMszKv9eVGRlF3LAALk--3tCROISSgWFw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://www.ohmjobs.com/job-seeker/getExperience",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ohmjobs",
+						"com"
+					],
+					"path": [
+						"job-seeker",
+						"getExperience"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

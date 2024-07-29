@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "83ca9739-2607-49db-9678-072388d9a6a9",
+		"name": "JobListing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listing-search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "pageNo",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "pageSize",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "department",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "designation_search",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "skillSetSearch",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "postFeshness",
+							"value": "30",
+							"type": "text"
+						},
+						{
+							"key": "graduationID",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "tagID",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ohmjobs.com/job-listing/search",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ohmjobs",
+						"com"
+					],
+					"path": [
+						"job-listing",
+						"search"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

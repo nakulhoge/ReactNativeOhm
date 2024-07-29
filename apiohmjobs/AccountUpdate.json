@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "258e968e-a1cd-4ba1-91ef-c7ecb16f0cf9",
+		"name": "Other",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [	
+		{
+			"name": "AccountUpdate",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI3MTI4MiIsImxvZ2luX25hbWUiOiJzYWNoaW4iLCJsb2dpbl9lbWFpbCI6InNhY2hpbmdvcmU5NUBnbWFpbC5jb20iLCJ1c2VyVHlwZSI6IkpvYlNlZWthciIsIkpvYkNhdGVnb3J5SUQiOiIyIiwiZGVwYXJ0bWVudElEIjoiMSIsImhvc3BpdGFsVXNlclR5cGUiOiIiLCJuYmYiOjE2NTg1ODg1NjgsImV4cCI6MTY1ODY3NDk2OCwiaWF0IjoxNjU4NTg4NTY4fQ.EKuRWtQY8tFsaLm5nB8Oivui37yjXy98ZXP-RL9gqZc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "accountStatus",
+							"value": "0",
+							"description": "0= Inactive, 1= Active, 2= Delete",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ohmjobs.com/job-seeker/account-update",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ohmjobs",
+						"com"
+					],
+					"path": [
+						"job-seeker",
+						"account-update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

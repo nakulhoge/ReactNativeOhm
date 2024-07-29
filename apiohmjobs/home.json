@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "e0994ed3-8a20-40f1-a008-172e9500cd18",
+		"name": "Home",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://www.ohmjobs.in/home/get-job-posting",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "pageNo",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "pageSize",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ohmjobs.in/home/get-job-posting",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ohmjobs",
+						"in"
+					],
+					"path": [
+						"home",
+						"get-job-posting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-newspager",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://www.ohmjobs.in/home/get-newspager",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ohmjobs",
+						"in"
+					],
+					"path": [
+						"home",
+						"get-newspager"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-categories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://www.ohmjobs.in/common/get-categories",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ohmjobs",
+						"in"
+					],
+					"path": [
+						"common",
+						"get-categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-city",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://www.ohmjobs.in/common/get-city",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ohmjobs",
+						"in"
+					],
+					"path": [
+						"common",
+						"get-city"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-department-by-id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "categoryID",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ohmjobs.in/common/get-department-by-id",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ohmjobs",
+						"in"
+					],
+					"path": [
+						"common",
+						"get-department-by-id"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

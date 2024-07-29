@@ -1,0 +1,116 @@
+{
+  "info": {
+    "_postman_id": "85a6d7fc-32e9-4697-b9a5-8ea59a6b30c9",
+    "name": "JD- Apply and Applied Jobs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "17277578"
+  },
+  "item": [
+    {
+      "name": "Apply Job",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiIxMjI5NzYiLCJsb2dpbl9uYW1lIjoidGVzdHNzIiwibG9naW5fZW1haWwiOiJ5dXZyYWpyYW5kaXZlODdAZ21haWwuY29tIiwidXNlclR5cGUiOiJKb2JTZWVrYXIiLCJKb2JDYXRlZ29yeUlEIjoiMiIsImRlcGFydG1lbnRJRCI6IjEiLCJob3NwaXRhbFVzZXJUeXBlIjoiIiwibmJmIjoxNjU0MTA0Mzg0LCJleHAiOjE2NTQxOTA3ODQsImlhdCI6MTY1NDEwNDM4NH0.fZWXK0hob_iPBFB_hPALhi9OySX0Gf3iMOYSDZae2ws",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "Mst_JobPostingID",
+              "value": "401",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://www.ohmjobs.com/common/apply-for-job-save",
+          "protocol": "https",
+          "host": ["www", "ohmjobs", "com"],
+          "path": ["common", "apply-for-job-save"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "JD",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiIxMjI5NzYiLCJsb2dpbl9uYW1lIjoidGVzdHNzIiwibG9naW5fZW1haWwiOiJ5dXZyYWpyYW5kaXZlODdAZ21haWwuY29tIiwidXNlclR5cGUiOiJKb2JTZWVrYXIiLCJKb2JDYXRlZ29yeUlEIjoiMiIsImRlcGFydG1lbnRJRCI6IjEiLCJob3NwaXRhbFVzZXJUeXBlIjoiIiwibmJmIjoxNjU0MTA0Mzg0LCJleHAiOjE2NTQxOTA3ODQsImlhdCI6MTY1NDEwNDM4NH0.fZWXK0hob_iPBFB_hPALhi9OySX0Gf3iMOYSDZae2ws",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
+        "url": {
+          "raw": "https://www.ohmjobs.com/view-job/api/staff-nurses-oticuwardcathlab/job-401",
+          "protocol": "https",
+          "host": ["www", "ohmjobs", "com"],
+          "path": [
+            "view-job",
+            "api",
+            "staff-nurses-oticuwardcathlab",
+            "job-401"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Applied Job List",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiIxMjI5NzYiLCJsb2dpbl9uYW1lIjoidGVzdHNzIiwibG9naW5fZW1haWwiOiJ5dXZyYWpyYW5kaXZlODdAZ21haWwuY29tIiwidXNlclR5cGUiOiJKb2JTZWVrYXIiLCJKb2JDYXRlZ29yeUlEIjoiMiIsImRlcGFydG1lbnRJRCI6IjEiLCJob3NwaXRhbFVzZXJUeXBlIjoiIiwibmJmIjoxNjU0MTA0Mzg0LCJleHAiOjE2NTQxOTA3ODQsImlhdCI6MTY1NDEwNDM4NH0.fZWXK0hob_iPBFB_hPALhi9OySX0Gf3iMOYSDZae2ws",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "pageNo",
+              "value": "1",
+              "type": "text"
+            },
+            {
+              "key": "pageSize",
+              "value": "10",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://www.ohmjobs.com/job-seekar/applied-job-list",
+          "protocol": "https",
+          "host": ["www", "ohmjobs", "com"],
+          "path": ["job-seekar", "applied-job-list"]
+        }
+      },
+      "response": []
+    }
+  ]
+}

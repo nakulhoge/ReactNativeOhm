@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "c0515d0b-fe27-4c66-b109-c215772237c9",
+		"name": "Change-Forgot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://www.ohmjobs.in/user/change-Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "abc6677@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "userType",
+							"value": "JobPoster",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ohmjobs.in/user/ForgotPassword",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ohmjobs",
+						"in"
+					],
+					"path": [
+						"user",
+						"ForgotPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://www.ohmjobs.in/user/change-Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "abc6677@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "userType",
+							"value": "JobPoster",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.ohmjobs.in/user/ForgotPassword",
+					"protocol": "http",
+					"host": [
+						"www",
+						"ohmjobs",
+						"in"
+					],
+					"path": [
+						"user",
+						"ForgotPassword"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
